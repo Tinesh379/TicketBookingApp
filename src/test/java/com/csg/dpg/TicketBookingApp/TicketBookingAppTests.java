@@ -1,10 +1,10 @@
-package com.csg.dpg.StudentSpringBootApp;
+package com.csg.dpg.TicketBookingApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudentSpringBootAppApplicationTests {
+class TicketBookingAppApplicationTests {
 
 	@Test
 	void contextLoads() {
