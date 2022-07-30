@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 http://maven.apache.org/xsd/settings-1.2.0.xsd">
+
+<servers>
+	<server>
+		<id>maven-snapshots</id>
+		<username>admin</username>
+		<password>{UrKT7Thh8cUHsH5dH1gB56CO/9VBW2glpl3bQvqgC1Y=}</password>
+	</server>
+	<server>
+		<id>maven-releases</id>
+		<username>admin</username>
+		<password>{UrKT7Thh8cUHsH5dH1gB56CO/9VBW2glpl3bQvqgC1Y=}</password>
+	</server>
+	<server>
+                <id>nexus-snapshots</id>
+                <username>admin</username>
+                <password>{UrKT7Thh8cUHsH5dH1gB56CO/9VBW2glpl3bQvqgC1Y=}</password>
+        </server>
+        <server>
+                <id>nexus-releases</id>
+                <username>admin</username>
+                <password>{UrKT7Thh8cUHsH5dH1gB56CO/9VBW2glpl3bQvqgC1Y=}</password>
+        </server>
+
+	<server>
+		<id>github></id>
+		<username>Tinesh379</username>
+		<password>{wtHkMhi/F/IH0QtMdSo6XCLwCCTQxGSKOqXVRFj/iSc=}</password>
+	</server>
+	<server>
+		<id>jfrog-cloud</id>
+		<username>tineshbabukatta@gmail.com</username>
+		<password>cmVmdGtuOjAxOjE2ODMxMzExMDg6RlFoVzJxZU92em9HYkRkOFZFeG5pNFVNaEZX</password>
+	</server>
+
+
+</servers>
+<profiles>
+	<profile>
+		<id>jboss</id>
+		<repositories>
+			<repository>
+				<id>credit-suisse-swiss</id>
+				<url>https://maven.repository.redhat.com/ga/</url>
+				<snapshots>
+					<enabled>false</enabled>
+				</snapshots>
+			</repository>
+			<repository>
+			 <id>credit-suisse-india</id>
+			 <url>https://repo1.maven.org/maven2/</url>
+			 <snapshots>
+					<enabled>false</enabled>
+			</snapshots>
+			</repository>
+		</repositories>
+	</profile>
+</profiles>
+
+
+	<activeProfiles>
+		<activeProfile>jboss</activeProfile>
+	</activeProfiles>
+
+  
+</settings>
