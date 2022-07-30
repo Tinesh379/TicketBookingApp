@@ -31,6 +31,11 @@
 		<password>{wtHkMhi/F/IH0QtMdSo6XCLwCCTQxGSKOqXVRFj/iSc=}</password>
 	</server>
 	<server>
+	      <id>GitHub</id>
+	      <username>Tinesh379</username>
+	      <password>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</password>
+	  </server>
+	<server>
 		<id>jfrog-cloud</id>
 		<username>tineshbabukatta@gmail.com</username>
 		<password>cmVmdGtuOjAxOjE2ODMxMzExMDg6RlFoVzJxZU92em9HYkRkOFZFeG5pNFVNaEZX</password>
@@ -53,8 +58,15 @@
 			 <id>credit-suisse-india</id>
 			 <url>https://repo1.maven.org/maven2/</url>
 			 <snapshots>
-					<enabled>false</enabled>
+				<enabled>false</enabled>
 			</snapshots>
+			</repository>
+			<repository>
+			  <id>github</id>
+			  <url>https://maven.pkg.github.com/Tinesh379/demo-springboot-app</url>
+			  <snapshots>
+			    <enabled>true</enabled>
+			  </snapshots>
 			</repository>
 		</repositories>
 	</profile>
