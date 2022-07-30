@@ -14,7 +14,23 @@ public class TicketBookingService {
 	}
 	
 	public Ticket getTicketById(Integer ticketId) {
-		return (Ticket) ticketBookingDao.findAll();
+		return ticketBookingDao.findById(ticketId).orElseThrow();
+	}
+
+    public Iterable <Ticket> getAllTickets() {
+		return ticketBookingDao.findAll();
+	}
+
+	public void deleteTicketById(Integer ticketId) {
+		 ticketBookingDao.deleteById(ticketId);
+	}
+
+	public Ticket updateTicket(Integer ticketId, String newEmail) {
+			Ticket ticketFromDb = ticketBookingDao.findById(ticketId).orElseThrow();
+			ticketFromDb.setEmail(newEmail);
+			Ticket updatedTicket = ticketBookingDao.save(ticketFromDb);
+			return updatedTicket;
+			
 	}
 
 }

@@ -12,7 +12,9 @@ import com.csg.dpg.TicketBookingApp.service.TicketBookingService;
 public class TicketBookingApp {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext applicationContext = SpringApplication.run(TicketBookingApp.class, args);
+		SpringApplication.run(TicketBookingApp.class, args);
+		
+		/*ConfigurableApplicationContext applicationContext = 
 		TicketBookingService ticketBookingService = applicationContext.getBean("ticketBookingService", TicketBookingService.class);
 		Ticket ticket = new Ticket();
 		
@@ -22,6 +24,7 @@ public class TicketBookingApp {
 		ticket.setPassengerName("Tinesh Babu Katta");
 		ticket.setEmail("tinesh.katta@credit-suisse.com");	
 		ticketBookingService.createTicket(ticket);
+		*/
 	}
 
 }

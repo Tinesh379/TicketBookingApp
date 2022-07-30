@@ -1,0 +1,6 @@
+INSERT INTO TICKET values (379,'2022-07-30','Hyderabad','t.k@cs.com','Tinesh Katta', 'Pune')
+INSERT INTO TICKET values (380,'2022-07-25','Chennai','b.r@ts.com','Baba Raghavendra', 'Srikakulam')
+INSERT INTO TICKET values (371,'2022-07-15','USA','a.m@hy.com','Anirudh Maganti', 'India')
+INSERT INTO TICKET values (372,'2022-07-11','Germany','r.k@gvp.com','Rajesh Kamma', 'Guntur')
+INSERT INTO TICKET values (373,'2022-07-18','Banagalore','v.k@wipro.com','Vamsi Krishna', 'Visakhapatnam')
+INSERT INTO TICKET values (374,'2022-07-07','Mumbai','p.s@navy.com','Pramodh Surada', 'Lonavala')
